@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+}
+
+body
+{
+    text-align: center;
+}
+h1
+{
+    border: 2px cornflowerblue solid;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px cornflowerblue;
+    color: cornflowerblue;
+    margin: auto;
+    margin-top: 50px;
+    padding: 3px;
+    font-family: Arial;
+    font-size: 3rem;
+    width:fit-content;
+}
