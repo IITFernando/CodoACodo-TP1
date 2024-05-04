@@ -52,12 +52,50 @@
 <!--MENU-->
 
 
+
 <!--SECCION 1-->
+
 <!--SECCION 1-->
 
 
 <!--SECCION 2-->
-<!--SECCION 2-->
+<section class="container-section1-contacto">
+    <div>
+        <p class="container-section1-p">Complete el siguiente formulario para hacernos llegar su mensaje.<br>
+            Le responderemos a la brevedad. Muchas gracias.</p>
+    </div>
+
+    <form class="was-validated" action="enviar_form.php" method="post">
+        <div class="col-md-12">
+            <label for="validationCustom01" class="form-label"></label>
+            <input type="text" class="form-control" id="validationCustom01" value="" required>
+            <div class="valid-feedback">
+
+            </div>
+        </div>
+        <div class="col-md-12">
+            <label for="validationCustomUsername" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend" required placeholder="Email">
+                <div class="invalid-feedback">
+
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Mensaje"></textarea>
+
+        </div>
+        <div><button type="button" class="btn btn-primary btn-enviar">Enviar</button></div>
+    </form>
+
+</section>
+
+<!SECCION 2
 
 
 
@@ -70,3 +108,7 @@
     <!--JS-->
 </body>
 </html>
+
+
+
+
