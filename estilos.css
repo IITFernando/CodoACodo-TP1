@@ -8,3 +8,56 @@
     box-sizing: border-box;
 
 }
+
+.logo-menu span{
+    color: aqua;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.logo-menu{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 60%;
+}
+
+.nav-link:hover{
+    color: aqua !important; 
+}
+
+.divider{
+    margin-top: 10px;
+    height: 7px;
+    width: 100%;
+    background-color:aqua;
+}
+
+.seccion-home{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-txt{
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.txt-p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 500px;
+    padding-left: 30%;
+}
+
+.contenedor-img{
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+.contenedor-img img{
+    width: 65%;
+    padding-left: 20%;
+
+}
