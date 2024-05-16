@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <title>CAC2024 - quees</title>
+</head>
+<body>
+    <script>
+        function Validar()
+        {
+            if(document.getElementById("apellido").value=="")
+            {
+                alert("Por favor ingrese su apellido")
+                document.getElementById("apellido").focus()
+                return
+            }
+            if(document.getElementById("email").value=="")
+            {
+                alert("Por favor ingrese su email")
+                document.getElementById("email").focus()
+            }
+        }
+    </script>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="itemMenu"><a href="index.html">Inicio</a></li>
+                <li class="itemMenu"><a href="quees.html">¿Qué es?</a></li>
+                <li class="itemMenu"><a href="impresoras.html">Impresoras</a></li>
+                <li class="itemMenu"><a href="nuestrotrabajo.html">Nuestro trabajo</a></li>
+                <li class="itemMenuSeleccionado">Contacto</li>
+            </ul>
+        </nav>
+        <div class="contenedorTituloEncabezado">
+            Impresiones<br>
+            3D
+        </div>
+        <div class="contenedorLogo">
+            <img class="imgLogo" src="imgs/logo.png" alt="">
+        </div>
+    </header>
+    <div class="cuerpo2H">
+        <form class="formulario" action="">
+            <label class="etiqueta"><span class="resaltado">* </span>Apellido:</label> <input class="campoEntrada" id="apellido" type="text" placeholder="Su apellido" required><br>
+            <label class="etiqueta">Nombre:</label> <input class="campoEntrada" type="text" placeholder="Su nombre"><br>
+            <label class="etiqueta"><span class="resaltado">* </span>eMail:</label> <input class="campoEntrada" id="email" type="text" placeholder="Su eMail" required><br>
+            <label class="etiqueta">Teléfono:</label> <input class="campoEntrada" type="text" placeholder="Su teléfono"><br>
+            <label class="etiqueta">Asunto:</label> <textarea class="campoEntrada" name="" id="" placeholder="Motivo"></textarea><br>
+            <div class="contenedorBoton">
+                <input class="boton" type="button" value="Enviar" onclick="Validar()"><br>
+            </div>
+        </form>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.135485633067!2d-60.635134724076316!3d-32.947432173592915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1c3cbaf851%3A0x9535997a023ab2eb!2sCEB%2C%20Buenos%20Aires%20789%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1715722926894!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+        CaC 2024 - Equipo 1
+    </footer>
+</body>
+</html>
