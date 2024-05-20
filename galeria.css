@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 
 }
 
@@ -40,6 +41,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: #333;
     
 }
 
@@ -55,6 +57,7 @@
     width: 500px;
     padding: 10%;
     font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
 }
 
 .cajas{
@@ -68,11 +71,34 @@
 }
 .cajas3{
     margin-top: 500px;
+    
 }
 
 .zoom {
     padding: 50px;
     background-image: url(../CodoACodo-TP1/img/a.webp);
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
+.zoom2 {
+    padding: 50px;
+    background-image: url(../CodoACodo-TP1/img/D5B19CFB-281B-4418-BBCA-F89F8ACE2DF3.jpg);
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
+.zoom3 {
+    padding: 50px;
+    background-image: url(../CodoACodo-TP1/img/push-diseño.png);
     transition: transform .2s;
     width: 200px;
     height: 200px;
@@ -86,6 +112,17 @@
     transform: scale(1.5); 
 }
 
+.zoom2:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+.zoom3:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
 
 .subrayado {
     color:aqua;
@@ -117,3 +154,40 @@
     transform-origin: bottom left;
 }
 
+footer {
+    text-align: center;
+    background-color: #eff0ef;
+    padding: 10px;
+    
+}
+
+/*QUERY*/
+
+@media only screen and (max-width: 768px){
+
+    
+    .subrayado{
+        font-size: 2.5rem;
+    }
+
+    .seccion2{
+        height: auto;
+    }
+
+    .cajas
+    {
+        display: flex;
+        margin-top: -50px;
+    }
+    .cajas2{
+        display: flex;
+        margin-top: -50px;
+    }
+    .cajas3{
+        display: flex;
+        margin-top: 60px;
+    }
+
+
+    
+}

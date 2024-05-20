@@ -7,9 +7,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
-    
-}
 
+}
 
 .logo-menu span{
     color: aqua;
@@ -35,61 +34,62 @@
     background-color:aqua;
 }
 
-.seccion-home{
+
+
+.trabajos
+{
+    align-items: center;
+    background-color: #333;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height:auto;
+    margin: auto;
     width: 100%;
     height: auto;
+    
+}
+
+.cardTrabajo
+{
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
     display: flex;
-    justify-content: space-between;
-    background-color: #333;
-}
-
-.contenedor-txt{
-    width: 100%;
-   
-    
-
-}
-
-.txt-p{
-    
-    text-align: justify;
-    text-justify: inter-word;
-    color: aliceblue;
-    padding: 10% 30%;
-    
+    height: 170px;
+    outline: 2px solid aqua;
+    width: 400px;
+    margin: 5% ;
     
 }
 
-.contenedor-img{
-    width: 100%;
-    
+.descripcionTrabajo
+{
+    color: black;
+    font-size: 14px;
+    overflow: hidden;
+    width: 240px;
 }
 
-.contenedor-img > img{
-    width: 50%;
-    padding: 10% 3%;
-
-    
+.imgTrabajo
+{
+    border-radius: 4px;
+    height: 150px;
+    width: 150px;
 }
 
-
-/* Estilos de footer */
 footer {
     text-align: center;
     background-color: #eff0ef;
     padding: 10px;
+    
 }
 
-
-/*QUERY INICIO*/
-
-@media only screen and (min-width: 600px) and (max-width: 900px){
-    .seccion-home{
+@media only screen and (max-width: 768px){
+    .trabajos{
+        display: flex;
         flex-direction: column;
-
+        
     }
-    .contenedor-img{
-        margin-left: 25%;
-    }
-
 }

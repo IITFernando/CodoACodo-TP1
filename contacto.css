@@ -8,8 +8,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
     
-}
 
+}
 
 .logo-menu span{
     color: aqua;
@@ -35,61 +35,35 @@
     background-color:aqua;
 }
 
-.seccion-home{
-    width: 100%;
-    height: auto;
+
+.container-section1-contacto{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
     background-color: #333;
+    
 }
 
-.contenedor-txt{
-    width: 100%;
-   
-    
-
-}
-
-.txt-p{
-    
-    text-align: justify;
-    text-justify: inter-word;
-    color: aliceblue;
-    padding: 10% 30%;
+.container-section1-p{
+    color:aqua;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 3% ;
     
     
 }
 
-.contenedor-img{
-    width: 100%;
-    
+.form-tamaño{
+    width: 60%;
+    padding-left: 35%;
+    margin-bottom: 50px;
+
 }
 
-.contenedor-img > img{
-    width: 50%;
-    padding: 10% 3%;
-
-    
-}
-
-
-/* Estilos de footer */
 footer {
     text-align: center;
     background-color: #eff0ef;
     padding: 10px;
-}
-
-
-/*QUERY INICIO*/
-
-@media only screen and (min-width: 600px) and (max-width: 900px){
-    .seccion-home{
-        flex-direction: column;
-
-    }
-    .contenedor-img{
-        margin-left: 25%;
-    }
-
+    
 }
