@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+
+}
+
+.logo-menu span{
+    color: aqua;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.logo-menu{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 60%;
+}
+
+.nav-link:hover{
+    color: aqua !important; 
+}
+
+.divider{
+    margin-top: 10px;
+    height: 7px;
+    width: 100%;
+    background-color:aqua;
+}
+
+
+
+.trabajos
+{
+    align-items: center;
+    background-color: #333;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height:auto;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    
+}
+
+.cardTrabajo
+{
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    height: 170px;
+    outline: 2px solid aqua;
+    width: 400px;
+    margin: 5% ;
+    
+}
+
+.descripcionTrabajo
+{
+    color: black;
+    font-size: 14px;
+    overflow: hidden;
+    width: 240px;
+}
+
+.imgTrabajo
+{
+    border-radius: 4px;
+    height: 150px;
+    width: 150px;
+}
+
+footer {
+    text-align: center;
+    background-color: #eff0ef;
+    padding: 10px;
+    
+}
+
+@media only screen and (max-width: 768px){
+    .trabajos{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

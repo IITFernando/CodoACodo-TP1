@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    
+
+}
+
+.logo-menu span{
+    color: aqua;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.logo-menu{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 60%;
+}
+
+.nav-link:hover{
+    color: aqua !important; 
+}
+
+.divider{
+    margin-top: 10px;
+    height: 7px;
+    width: 100%;
+    background-color:aqua;
+}
+
+
+.container-section1-contacto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    
+}
+
+.container-section1-p{
+    color:aqua;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 3% ;
+    
+    
+}
+
+.form-tamaño{
+    width: 60%;
+    padding-left: 35%;
+    margin-bottom: 50px;
+
+}
+
+footer {
+    text-align: center;
+    background-color: #eff0ef;
+    padding: 10px;
+    
+}

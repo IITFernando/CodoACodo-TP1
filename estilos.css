@@ -15,11 +15,6 @@ a
     text-decoration: none;
 }
 
-a:active
-{
-    border: 2px solid black;
-}
-
 a:hover
 {
     outline: 2px solid white;
@@ -29,11 +24,12 @@ body
 {
     color: white;
     display:grid;
-    height:100vh;
-    width: 99vw;
-    grid-template-rows: 3fr 10fr 1fr;
-    row-gap: 1%;
-    margin: auto;
+    grid-template-rows: 3fr 9fr 1fr;
+    height:99vh;
+    margin: 0 auto;
+    max-width: 1920px;
+    row-gap: 2px;
+    width: 100vw;
 }
 
 footer
@@ -45,6 +41,7 @@ footer
     display: flex;
     font-family: "Josefin Sans";
     font-size: 25px;
+    font-size: 1.56em;
     font-weight: bold;
     height:100%;
     justify-content: center;
@@ -57,10 +54,12 @@ header
     background-color: #393535;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #2eecc7;
-    display: flex;
-    flex-wrap: wrap;
-    height:100%;
+    display: grid;
+    grid-template-areas: 
+    "menu marca";
+    grid-template-columns: 1000px 1fr;
     gap: 10px;
+    height:100%;
     margin: auto;
     width: 98%;
 }
@@ -77,19 +76,56 @@ nav
     margin-bottom: 10px;
     margin-left: 15px;
     width: 70%;
+    width: 100%;
+}
+
+select
+{
+    background-color: white;
+    border-radius: 4px;
+    color: rgb(106, 105, 105);
+    font-family: "Josefin Sans";
+    font-size: 1.25em;
+    margin: 2px;
+    width: 71.5%;
 }
 
 /* Clases */
 .boton
 {
+    color: #393535;
+    margin: 3px auto;
     font-family: "Josefin Sans";
-    font-size: 20px;
-    width: 450px;
+    font-size: 1.25em;
+    width: 100%;
 }
 
 .boton:hover
 {
     font-style: italic;
+}
+
+.campoEntrada
+{
+    border-radius: 4px;
+    display: inline-block;
+    font-family: "Josefin Sans";
+    font-size: 1.25em;
+    margin: 2px;
+    width: 70%;
+}
+
+.cardTrabajo
+{
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    height: 170px;
+    justify-content: space-around;
+    margin: 10px auto;
+    outline: 2px solid #2bdda6;
+    width: 85%;
 }
 
 /* Animación contacto */
@@ -107,6 +143,7 @@ nav
     color: #393535;
     font-weight: 900;
     font-size: 25px;
+    font-size: 1.56em;
     font-style: italic;
     content: "\f2b6";
     position: absolute;
@@ -127,31 +164,35 @@ nav
     visibility:hidden;
 }
 
-.campoEntrada
-{
-    border-radius: 4px;
-    font-family: "Josefin Sans";
-    font-size: 20px;
-    margin: 2px;
-    width: 300px;
-}
-
-.formulario
-{
-    border-radius: 5px;
-    margin-left: 15px;
-    outline: 2px solid #2bdda6;
-    padding: 10px;
-    width: 450px;
-}
-
 .contenedorLogo
 {
     align-items:center;
     display: flex;
     flex-direction: row;
     height: 100%;
+    margin-right: 15px;
     width: 100px;
+}
+
+.contenedorMarca
+{
+    display: flex;
+    grid-area: marca;
+    justify-content: right;
+}
+
+.contenedorMenu
+{
+    display: inline-block;
+    grid-area: menu;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-size: 1.25em;
+    list-style: none;
+    margin: 0;
+    padding-left: 5px;
+    width: 81%;
+    width: 100%;
 }
 
 .contenedorTituloEncabezado
@@ -159,7 +200,7 @@ nav
     align-items: center;
     display: flex;
     font-family:"Josefin Sans";
-    font-size: 50px;
+    font-size: 3.13em;
     font-weight: bold;
     text-align:right;
 }
@@ -177,13 +218,32 @@ nav
     width: 98%;
 }
 
+.cuerpo2H .contacto
+{
+    display: grid;
+    height:fit-content;
+    grid-template-areas:
+    "formulario mapa";
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+.cuerpo2H .index
+{
+    display: grid;
+    grid-template-areas:
+    "parrafo logo";
+    grid-template-columns: 66% 33%;
+}
+
 .cuerpo2H p
 {
     font-family: "Roboto Slab";
-    font-size: 25px;
+    font-size: 1.56em;
+    grid-area: parrafo;
     height:400px;
     margin-left: 15px;
-    width: 804px;
+    width: 98%;
 }
 
 .cuerpo3v
@@ -206,13 +266,36 @@ nav
     margin: auto;
 }
 
+.descripcionTrabajo
+{
+    color: black;
+    font-family: "Roboto Slab";
+    font-size: 1em;
+    overflow: hidden;
+    width: 240px;
+}
+
 .etiqueta
 {
     text-align: right;
     display: inline-block;
     font-family: "Josefin Sans";
-    font-size: 20px;
-    width: 100px;
+    font-size: 1.25em;
+    width: 23%;
+}
+
+.formulario
+{
+    border-radius: 5px;
+    height: fit-content;
+    grid-area: formulario;
+    margin-left:15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    outline: 2px solid #2bdda6;
+    padding: 10px;
+    width: 70%;
+
 }
 
 .imgLogo
@@ -223,10 +306,10 @@ nav
 .imgLogoGrande
 {
     border-radius: 5px;
-    height: 403px;
+    grid-area: logo;
     margin-right: 15px;
     outline: 2px solid #2bdda6;
-    width: 403px;
+    width: 100%;
 }
 
 .imgTrabajo
@@ -239,43 +322,34 @@ nav
 .itemMenu
 {
     display: inline-block;
-    height:28px;
+    height: 100%;
     line-height: 28px;
-    width: 159px;
+    width: 19%;
 }
 
 .itemMenuSeleccionado
 {
     display: inline-block;
-    height: 24px;
+    height: 100%;
     outline: 4px solid #2eecc7;    
-    width: 158px;
+    width: 19%;
 }
 
 .josefin
 {
     font-family: "Josefin Sans";
-    font-size: 20px;
+    font-size: 1.25em;
     margin-left: 10px;
 }
 
 .mapa
 {
     border-radius: 5px;
+    grid-area: mapa;
     margin-right: 15px;
     outline: 2px solid #2bdda6;
     padding: 10px;
-    width: 450px;
-}
-
-.menu
-{
-    display: inline-block;
-    font-family: "Josefin Sans";
-    font-size: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    width: 95%;
 }
 
 .resaltado
@@ -287,7 +361,7 @@ nav
 .roboto
 {
     font-family: "Roboto Slab";
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .trabajos
@@ -305,25 +379,205 @@ nav
     width: 98%;
 }
 
-.cardTrabajo
+/* Media querys */
+@media screen and (max-width:1423px)
 {
-    align-items: center;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    display: flex;
-    height: 170px;
-    justify-content: space-around;
-    margin: auto;
-    outline: 2px solid #2bdda6;
-    width: 400px;
+    header
+    {
+        grid-template-areas:
+        "marca marca"
+        "menu menu";
+        grid-template-rows: 2fr 1fr;
+    }
 }
 
-.descripcionTrabajo
+@media screen and (max-width:1270px)
 {
-    color: black;
-    font-family: "Roboto Slab";
-    font-size: 16px;
-    overflow: hidden;
-    width: 240px;
+    .trabajos
+    {
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }   
+}
+
+@media screen and (max-width:1030px)
+{
+    header
+    {
+        grid-template-areas:
+        "marca marca"
+        "menu menu";
+        grid-template-rows: 2fr 1fr;
+    }
+    
+    .campoEntrada
+    {
+        width: 98%;
+    }
+    
+    .campoEntradaSelect
+    {
+        width:99%
+    }
+
+    .contenedorMarca
+    {
+        margin: auto;
+    }
+
+    .cuerpo2H .contacto
+    {
+        grid-template-areas:
+        "formulario"
+        "mapa";
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }    
+    
+    .formulario
+    {
+        /* height: 90%; */
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mapa
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1025px)
+{
+    .cuerpo2H
+    {
+        align-items: center;
+    }
+    
+    .cuerpo2H .index
+    {
+        grid-template-areas:
+        "logo logo"
+        "parrafo parrafo";
+    }
+    
+    .imgLogoGrande
+    {
+        display:inline-block;
+        margin: 10px auto;
+        width: 30%;
+    }
+    .itemMenu, .itemMenuSeleccionado
+    {
+        width: 18%;
+    }
+    
+}
+
+@media screen and (max-width:985px)
+{
+    .trabajos
+    {
+        grid-template-columns: 48% 48%;
+    }
+}
+
+@media screen and (max-width:968px)
+{
+    body
+    {
+        font-size: 14px;
+    }
+
+    .contenedorMenu .itemMenu, .contenedorMenu .itemMenuSeleccionado
+    {
+        width: 15%;
+    }
+
+    .cuerpo3v .roboto, .cuerpo3v .josefin
+    {
+        width:80%;
+    }
+
+    .cuerpo3v .josefin
+    {
+        width:80%;
+    }
+
+}
+
+@media screen and (max-width:950px)
+{
+    body
+    {
+        background-color: red;
+        font-size: 14px;
+    }
+    header
+    {
+        grid-template-areas:
+        "marca"
+        "menu";
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    
+    .cardTrabajo
+    {
+        width: 130%;
+        margin-left: 10px;
+    }
+    .contenedorMenu
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .contenedorMenu .itemMenu, .contenedorMenu .itemMenuSeleccionado
+    {
+        font-size: 1em;
+        width: 91%;
+    }
+
+    .cuerpo2H .contacto
+    {
+        grid-template-areas:
+        "formulario"
+        "mapa";
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        width: 100%;
+    } 
+    
+    .etiqueta
+    {
+        width: 30%;
+        text-align: left;
+    }
+
+    .index p
+    {
+        height: fit-content;
+        width: 80%;
+    }
+
+    .mapa
+    {
+        margin-bottom: 15px;
+    }
+    
+    .trabajos
+    {
+        gap: 10px;
+        grid-template-columns: 70%;
+        grid-template-rows: repeat(9,1fr);
+        width: 100%;
+    }
 }
 
